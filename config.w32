@@ -1,0 +1,7 @@
+ARG_ENABLE('brunsli', 'brunsli support', 'no');
+
+if (PHP_BRUNSLI != 'no') {
+  AC_DEFINE('HAVE_BRUNSLI', 1, 'brunsli support enabled');
+
+  EXTENSION('brunsli', 'brunsli.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
