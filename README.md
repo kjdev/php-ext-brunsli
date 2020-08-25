@@ -31,7 +31,7 @@ $ make install
 
 ## Configuration
 
-brunsli.ini:
+php.ini:
 
 ```
 extension=brunsli.so
